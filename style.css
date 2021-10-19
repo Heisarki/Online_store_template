@@ -4,7 +4,6 @@
 
   list-style: none;
   font-family: "Poppins", sans-serif;
-  color: white;
 }
 
 html {
@@ -16,6 +15,9 @@ html {
   --blue: blue;
   --green: green;
   --red: red;
+
+  --theme: black;
+  --theme-inverted: white;
 }
 
 .center-row {
@@ -36,17 +38,23 @@ html {
   height: 2000px;
 }
 
+/*   theme  */
+
 .theme {
   background-color: var(--black);
   padding: 6px;
   font-size: small;
+  color: var(--theme-inverted);
 }
+
+/* header */
 
 .header {
   background-color: var(--blue);
   height: 600px;
   background: url("images/header.jpg") center;
   position: relative;
+  color: var(--theme-inverted);
 }
 
 .menu ul {
@@ -78,34 +86,81 @@ html {
 .title p {
 }
 
-.header .w-name h1 {
-  font-size: 20px;
+/* store-des */
+
+.store-des {
+  text-align: center;
+  padding: 5%;
+  font-size: small;
+  color: var(--theme);
+  background-color: var(--theme-inverted);
 }
 
-.header .nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.logo {
+  width: 30px;
 }
 
-.test-box {
-  height: 20px;
-  width: 20px;
-  background-color: var(--red);
-  margin: 10px;
+.store-des .contain {
+  width: 500px;
 }
 
-.btn-1 {
-  display: flex;
-  justify-content: center;
-  margin: 30px;
+/* feature-product */
+.feature-product {
+  color: var(--theme-inverted);
+}
+
+.feature-product img {
+  width: 300px;
+}
+
+.des {
+  position: relative;
+}
+
+.des h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+}
+
+.des h2:hover {
+  bottom: 12px;
+  left: 5px;
 }
 
 /* button */
 .btn-1 {
-  background-color: black;
-  width: auto;
-  height: auto;
+  background-color: transparent;
+  border-color: white;
+  border-style: solid;
   border-radius: 50px;
-  padding: 10px;
+  padding: 10px 30px;
+  color: var(--theme-inverted);
+}
+
+.btn-1:hover {
+  background-color: black;
+  border-style: none;
+}
+
+.btn-2 {
+  background-color: black;
+  border-color: white;
+  border-style: solid;
+  border-radius: 50px;
+  padding: 10px 30px;
+  color: var(--theme-inverted);
+}
+
+.btn-2:hover {
+  background-color: black;
+  border-style: none;
+}
+
+.pad-20 {
+  padding: 20px;
+}
+
+.margin-20 {
+  margin: 20px;
 }
