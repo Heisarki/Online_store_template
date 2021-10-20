@@ -3,6 +3,10 @@ const nav = document.querySelector('.nav');
 
 const header_width = document.querySelector(".header");
 
+const toggle_button = document.querySelector(".toggle-button");
+const header = document.querySelector(".header");
+
+
 let toggle = true;
 
 /*
@@ -22,12 +26,27 @@ button.addEventListener('click', e => {
 
 */
 
+toggle_button.addEventListener('click', e => {
+    console.log('click')
+    if (toggle) {
+        nav_list.style.display = "flex";
+        nav_list.style.backgroudColor = "white";
+        toggle = false;
+    }
+    else {
+        nav_list.style.display = "none";
+        toggle = true;
+    }
+    
+})
+
+
 window.addEventListener('resize', e => {
     console.log(window.innerHeight);
     console.log(window.innerWidth)
     let w = window.innerWidth;
     let h = window.innerWidth;
-
+/*
     if (w <= 700) {
         nav.style.justifyContent = "center";
         nav_list.style.display = "none";
@@ -40,7 +59,7 @@ window.addEventListener('resize', e => {
 
         header_width.style.height = "600px"
     }
-
+*/
 })
 
 
