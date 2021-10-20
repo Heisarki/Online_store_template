@@ -35,7 +35,7 @@ html {
 }
 
 .flexbox-container {
-  height: 2000px;
+  height: auto;
 }
 
 /*   theme  */
@@ -101,7 +101,7 @@ html {
 }
 
 .store-des .contain {
-  width: 500px;
+  width: auto;
 }
 
 /* feature-product */
@@ -117,15 +117,53 @@ html {
   position: relative;
 }
 
-.des h2 {
+.des .text-container h2 {
   position: absolute;
   bottom: 20px;
   left: 10px;
 }
 
-.des h2:hover {
-  bottom: 12px;
-  left: 5px;
+.des .text-container {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: 10px;
+}
+
+.des .text-container:hover {
+  top: 20px;
+  left: -5px;
+}
+
+/* featured-product */
+
+.featured-product h3 {
+  padding: 40px;
+}
+
+.product-card {
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+  color: var(--theme);
+  font-size: small;
+}
+
+.featured-product a {
+  color: var(--theme);
+}
+
+/* newsletter */
+
+.newsletter {
+  height: 300px;
+  background: url("images/footer.png") center;
+}
+
+.newsletter h1 {
+  font-size: large;
+  padding-bottom: 40px;
+  color: var(--theme-inverted);
 }
 
 /* button */
@@ -163,4 +201,25 @@ html {
 
 .margin-20 {
   margin: 20px;
+}
+
+/* Navigation */
+
+.nav {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-list li {
+  margin: 10px;
 }
